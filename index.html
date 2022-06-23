@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Formulários: B7Web</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="left--side"><img src="image/financial_data.png" alt="financial-image"></div>
+        <div class="right--side">
+            <h1>criar conta</h1>
+            <form action="" method="post" class="b7validator">
+                <label>
+                    seu nome <br>
+                    <input type="text" name="nome" data-rules="required|min=2">
+                </label>
+                <label>
+                    seu email <br>
+                    <input type="text" name="email" data-rules="required|email">
+                </label>
+                <label>
+                    sua senha <br>
+                    <input type="text" name="password" data-rules="required|min=8">
+                </label>
+                <input type="submit" value="cadastrar">
+                </label>
+            </form>
+            <div class="link">
+                já tenha uma conta ? <a href="">faça o loguin</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
